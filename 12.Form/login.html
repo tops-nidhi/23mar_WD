@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            color: brown;
+        }
+        label{
+            color: limegreen;
+        }
+        /* .lnm{
+            background: yellow;
+        }
+        #fnm{
+            background: black;
+        } */
+        fieldset{
+            text-align: center;
+            width: 50%;
+        }
+        legend{
+            /* background: yellow; */
+            /* padding: 15px; */
+            /* margin: 5px; */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        
+        <fieldset>
+            <legend><u>Log-In</u></legend>
+            <form action="../11.Table/table.html" method="get">
+                <label for="fnm" id="">First Name:</label>
+                <input type="text" name="fnm" id="fnm" value="">
+                <br><br><label for="lnm" class="lnm">Last Name:</label>
+                <input type="text" name="lnm" id="" class="lnm">
+                <!-- <br><br><input type="text" name="unm" placeholder="Enter your user name.."> -->
+                <br><br><label for="pass">Password</label>
+                <input type="password" name="pass" id="" required>
+                <br><br><input type="submit" value="Log-In" name="Submit">
+                <input type="reset" value="set">
+        </form>
+    </fieldset>
+</center>
+</body>
+</html>
