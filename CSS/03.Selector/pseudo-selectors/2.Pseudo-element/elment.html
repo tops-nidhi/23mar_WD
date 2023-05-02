@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        p{
+            color: black;
+        }
+        ul{
+            background-color: #000;
+            text-align: center;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            color: #fff;
+            padding: 50px;
+        }
+
+        li::after{
+            content: '';
+            margin-left: 10px;
+            color: blue;
+            border: 1px solid #666;
+        }
+        div::before{
+            content: '';
+            border: 1px solid #666;
+        }
+        p::first-letter{
+            font-size: 40px;
+        }
+        p::first-line{
+            background-color: coral;
+        }
+        ::selection{
+            color: blue;
+            background: lightblue;
+        }
+        p::selection{
+            background: royalblue;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="fa fa-home">Home</li>
+            <li class="fa fa-contact">Contact-Us</li>
+            <li>About-US</li>
+            <li class="fa fa-lock">Sign UP</li>
+        </ul>
+    </header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nam fugiat? Blanditiis ad iste pariatur laborum id dolorum tenetur saepe vero minima, natus recusandae provident neque, ipsa soluta quidem perferendis ratione dolore voluptas odio mollitia repudiandae hic architecto? Praesentium maiores labore quod asperiores nam sed molestias ad quam ut obcaecati?</p>
+    <div>Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
