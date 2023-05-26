@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            height: 70px;
+            width: auto;
+            background: #000;
+            text-align: center;
+            line-height: 70px;
+        }
+        ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 3px;
+            padding: 0px 50px;
+        }
+        ul li a{
+            color: #0ff;
+            text-decoration: none;
+            transition: 1s;
+            font-size: 20px;
+            padding: 10px;
+        }
+        ul li a:hover{
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 4px;
+        }
+        .slider{
+            height: 500px;
+            width: auto;
+        }
+        .content{
+            height: 700px;
+            width: 100%;
+            background: lightcoral;
+            margin: 0;
+        }
+        .content .section{
+            height: 100%;
+            border: 1px solid black;
+            float: left;
+        }
+        .content .leftside{
+            /* display: inline; */
+            width: 20%;
+            background-color: lightgray;
+        }
+        .content .main_content{
+            width: 60%;  
+            background: lightblue;         
+        }
+        .content .right_side{
+            width: 20%;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header start -->
+    <div class="header">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Contact-Us</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+    <!-- Header End -->
+    <!-- Slider image start -->
+    <div class="slider">
+        <img src="https://assets.vogue.com/photos/5f5fac8b7d9362f52d645560/16:9/w_1280,c_limit/social-holding.jpg" alt="slider" height="500px" width="100%">
+    </div>
+    <!-- Slider image End -->
+    <!-- Content Start -->
+    <div class="content">
+        <div class="section leftside"></div>
+        <div class="section main_content"></div>
+        <div class="section right_side"></div>
+    </div>
+    <!-- Content End -->
+</body>
+</html>
