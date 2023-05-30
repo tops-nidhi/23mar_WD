@@ -41,7 +41,7 @@
             width: auto;
         }
         .content{
-            height: 700px;
+            height: 600px;
             width: 100%;
             background: lightcoral;
             margin: 0;
@@ -60,15 +60,29 @@
             width: 60%;  
             background: lightblue;         
         }
-        .content .right_side{
+        .content .rightside{
             width: 20%;
             background-color: lightgreen;
+            /* clear: both; */
+        }
+       
+        .content .main_content .info{
+            float: left;
+            width: 60%;
+        }
+        .content .main_content .img{
+            float: left;
+            width: 40%;
+        }
+        
+        .content .i2{
+            clear: both;
         }
     </style>
 </head>
 <body>
     <!-- Header start -->
-    <div class="header">
+    <div class="header" >
 
         <ul>
             <li><a href="#">Home</a></li>
@@ -86,9 +100,39 @@
     <!-- Slider image End -->
     <!-- Content Start -->
     <div class="content">
-        <div class="section leftside"></div>
-        <div class="section main_content"></div>
-        <div class="section right_side"></div>
+        <div class="section leftside">
+            <img src="../../Image/right.jpg" alt="" height="600px" width="100%">
+
+        </div>
+        <div class="section main_content">
+            <div class="i1">
+                <div class="img">
+                    <img src="../../Image/man.jpg" alt="man">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perferendis repudiandae, ad minima maxime saepe doloribus voluptatem asperiores voluptate nulla nobis illo, voluptatibus quia harum adipisci dolores praesentium rem sunt!</p>
+                </div>
+            </div>
+            <div class="i2">
+                <div class="info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perferendis repudiandae, ad minima maxime saepe doloribus voluptatem asperiores voluptate nulla nobis illo, voluptatibus quia harum adipisci dolores praesentium rem sunt!</p>
+                </div>
+                    <div class="img">
+                        <img src="../../Image/weman.jpg" alt="man">
+                    </div>
+            </div>
+            <div class="i2">
+                <div class="img">
+                    <img src="../../Image/man.jpg" alt="man">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perferendis repudiandae, ad minima maxime saepe doloribus voluptatem asperiores voluptate nulla nobis illo, voluptatibus quia harum adipisci dolores praesentium rem sunt!</p>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="section rightside">
+        </div>
     </div>
     <!-- Content End -->
 </body>
