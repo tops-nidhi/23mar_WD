@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            margin: 5px auto;
+            background: #0fb;
+            border: 2px solid navy;
+        }
+        .rotate{
+            transition: 1s;
+        }
+        .rotate:hover{
+            transform: rotate(360deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box original">Original</div>
+    <div class="box rotate">Rotate</div>
+</body>
+</html>
