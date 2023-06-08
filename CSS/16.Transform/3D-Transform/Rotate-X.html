@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translate</title>
     <style>
+        div{
+            backface-visibility: hidden;
+        }
         .box{
-            height: 120px;
-            width: 120px;
+            height: 300px;
+            width: 500px;
             background: transparent;
             border: none;
+            margin: auto;
+            position: relative;
         }
         .item{
             height: 100%;
             width: 100%;
-            /* back */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            transition: 1s;
+            background: url('../../../Image/baby-panda.png');
+        }
+        .box .rotate-x{
+            transform: rotateZ(180deg);
+        }
+        .box .rotatex{
+            /* background: url('../../../Image/angry-panda.jpg'); */
+            transform: rotateZ(0deg);
+        }
+        .box:hover .rotate-x{
+            transform: rotateZ(0deg);
+        }
+        .box:hover .rotatex{
+            transform: rotateZ(180deg);
         }
     </style>
 </head>

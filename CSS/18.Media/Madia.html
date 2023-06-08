@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        div{
+            height: 250px;
+            width: 500px;
+            background: red;
+        }
+        @media (max-width:500px)
+        {
+            div{background: lightblue;
+                width: 700px;
+                height: 500px;
+            }
+        }
+        @media (min-width:500px) and (max-width:700px) {
+            div{background: lightgreen;}
+        }
+        @media (min-width:700px) and (max-width:900px)
+        {
+            div{background: lightcoral;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 250px;
+            width: 250px;
+            background: transparent;
+            /* position: absolute; */
+            /* background-size: cover; */
+            animation-name: animate;
+            animation-duration: 0.5s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animate{
+            /* 0%{background: url('../../Image/emoji-1.jpg');background-size: 100% 100%;}
+            25%{background: url('../../Image/emoji-2.jpg');background-size: 100% 100%;}
+            50%{background: url('../../Image/emoji-3.jpg');background-size: 100% 100%;}
+            75%{background: url('../../Image/emoji-4.jpg');background-size: 100% 100%;}
+            100%{background: url('../../Image/emoji-5.jpg');background-size: 100% 100%;} */
+            0%{border-top: 20px solid red; border-radius: 50%;}
+            25%{border-right: 20px solid yellow; border-radius: 50%;}
+            50%{border-bottom: 20px solid green; border-radius: 50%;}
+            100%{border-left: 20px solid blue; border-radius: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

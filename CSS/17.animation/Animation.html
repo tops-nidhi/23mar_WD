@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 250px;
+            width: 500px;
+            background: darkgreen;
+            animation-name: animate;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        @keyframes animate{
+            to{
+                background: lightgreen;
+                border-radius: 20%;
+                top: 50px;
+            }
+            from{
+                background: lime;
+                border-radius: 50%;
+                top: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
