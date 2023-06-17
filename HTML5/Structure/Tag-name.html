@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure</title>
+    <style>
+        header,nav, .banner, .content, footer{
+            width: auto;
+            border: 1px solid black;
+        }
+        header{
+            height: 70px; 
+            background: #000;
+        }
+        nav{
+            height: 50px;
+            background: lightcoral;
+        }
+        .banner{
+            height: 500px;
+            background: teal;
+        }
+        .content{
+            height: 700px;
+            display: flex;
+        }
+        aside, article{
+            height: inherit;
+            background: lightblue;
+        }
+        aside{
+            width: 20%;
+        }
+        .main-content{
+            width: 70%;
+            background-color: khaki;
+        }
+        article{
+            width: 10%;
+        }
+        footer{
+            height: 250px;
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header start -->
+    <header>
+        
+    </header>
+    <!-- Header End -->
+    <!-- NavBar Start -->
+    <nav>
+
+    </nav>
+    <!-- NavBar End -->
+    <!-- Slider Start -->
+    <section class="banner"></section>
+    <!-- Slider End -->
+    <!-- main content start -->
+    <section class="content">
+        <aside></aside>
+        <section class="main-content"></section>
+        <article></article>
+    </section>
+    <!-- main content end -->
+    <!-- Footer Start -->
+    <footer></footer>
+    <!-- Footer End -->
+</body>
+</html>
