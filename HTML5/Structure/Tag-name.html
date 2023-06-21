@@ -5,14 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structure</title>
     <style>
+<<<<<<< HEAD
+=======
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+>>>>>>> 0992f78 (main)
         header,nav, .banner, .content, footer{
             width: auto;
             border: 1px solid black;
         }
+<<<<<<< HEAD
         header{
             height: 70px; 
             background: #000;
         }
+=======
+        /* Header Start */
+        header{
+            height: 70px; 
+            /* background: #000; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header .menu{
+            margin: 5px;
+            padding: 20px;
+        }
+        header .menu a{
+            text-decoration: none;
+        }
+        header .menu ul{
+            display: none;
+            position: absolute;
+            background: #000;
+            width: 150px;
+            text-align: center;
+            top: 50px;
+            /* bottom: -50px; */
+            left: 0px;
+        }
+        header .mcont{
+            position: relative;
+            border: solid;
+        }
+        header .menu ul li{
+            list-style: none;
+            color: #fff;
+        }
+        
+        header .menu a:hover{
+            text-decoration: underline;
+        }
+        header .mcont:hover ul{
+            display: block;
+        }
+        /* Header End */
+>>>>>>> 0992f78 (main)
         nav{
             height: 50px;
             background: lightcoral;
@@ -35,6 +87,14 @@
         .main-content{
             width: 70%;
             background-color: khaki;
+<<<<<<< HEAD
+=======
+
+        }
+        .main-content fieldset{
+            width: 50%;
+            height: 500px;
+>>>>>>> 0992f78 (main)
         }
         article{
             width: 10%;
@@ -48,7 +108,20 @@
 <body>
     <!-- Header start -->
     <header>
+<<<<<<< HEAD
         
+=======
+        <div class="menu"><a href="#">Home</a></div>
+        <div class="menu"><a href="#">About us</a></div>
+        <div class="menu mcont"><a href="#">Contact Us</a>
+            <ul>
+                <li>Email</li>
+                <li>Phone no</li>
+                <li>Address</li>
+            </ul>
+        </div>
+        <div class="menu"><a href="#">Log in</a></div>
+>>>>>>> 0992f78 (main)
     </header>
     <!-- Header End -->
     <!-- NavBar Start -->
@@ -62,7 +135,27 @@
     <!-- main content start -->
     <section class="content">
         <aside></aside>
+<<<<<<< HEAD
         <section class="main-content"></section>
+=======
+        <section class="main-content">
+            <fieldset>
+                <legend>Log-in</legend>
+                <form action="#" method="post">
+                    <div class="unm">
+                        <label for="unm">User name:</label>
+                        <input type="text" name="unm" id="" required pattern="[A-Z, a-z]{3,5}">
+                    </div>
+                    <div class="pass">
+                        <label for="pass">PassWord:</label>
+                        <input type="password" name="pass" id="" pattern="[A-Z, a-z, 0-9]{8}">
+                    </div>
+                    <input type="submit" name="" id="" value="Log-in">
+                    <input type="reset" name="" id="">
+                </form>
+            </fieldset>
+        </section>
+>>>>>>> 0992f78 (main)
         <article></article>
     </section>
     <!-- main content end -->
