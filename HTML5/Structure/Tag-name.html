@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 70dca06 (add)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structure</title>
+<<<<<<< HEAD
     <style>
 <<<<<<< HEAD
 =======
@@ -26,11 +31,42 @@
         /* Header Start */
         header{
             height: 70px; 
+=======
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+        }
+
+        header,
+        nav,
+        .banner,
+        .content,
+        footer {
+            width: auto;
+            border: 1px solid black;
+        }
+
+        header {
+            height: 70px;
+            background: #000;
+        }
+
+        /* Header Start */
+        header {
+            height: 70px;
+>>>>>>> 70dca06 (add)
             /* background: #000; */
             display: flex;
             justify-content: center;
             align-items: center;
         }
+<<<<<<< HEAD
         header .menu{
             margin: 5px;
             padding: 20px;
@@ -39,6 +75,25 @@
             text-decoration: none;
         }
         header .menu ul{
+=======
+        header .fa
+        {
+            font-size: 32px;
+            color: aqua;
+            display: none;
+        }
+
+        header .menu {
+            margin: 5px;
+            padding: 20px;
+        }
+
+        header .menu a {
+            text-decoration: none;
+        }
+
+        header .menu ul {
+>>>>>>> 70dca06 (add)
             display: none;
             position: absolute;
             background: #000;
@@ -48,15 +103,30 @@
             /* bottom: -50px; */
             left: 0px;
         }
+<<<<<<< HEAD
         header .mcont{
             position: relative;
             border: solid;
         }
         header .menu ul li{
+=======
+        
+        header .mcont {
+            position: relative;
+            border: solid;
+        }
+        
+        header .mcont {
+            z-index: 2;
+        }
+
+        header .menu ul li {
+>>>>>>> 70dca06 (add)
             list-style: none;
             color: #fff;
         }
         
+<<<<<<< HEAD
         header .menu a:hover{
             text-decoration: underline;
         }
@@ -111,6 +181,117 @@
 <<<<<<< HEAD
         
 =======
+=======
+        header .menu a:hover {
+            text-decoration: underline;
+        }
+
+        header .mcont:hover ul {
+            display: block;
+        }
+
+        /* Header End */
+        nav {
+            /* height: 50px; */
+            background: lightcoral;
+            position: sticky;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        nav .part {
+            height: 50px;
+            border: 1px solid black;
+        }
+        
+        nav .part-1 {
+            background: coral;
+            width: 25%;
+        }
+        
+        nav .part-2 {
+            background: brown;
+            /* border: 1px solid black; */
+            width: 75%;
+        }
+        
+        .Fixed {
+            width: 120px;
+            height: 200px;
+            background: darkblue;
+            position: fixed;
+            right: 0;
+            top: 200px;
+            z-index: 1;
+        }
+
+        .banner {
+            height: 500px;
+            background: teal;
+        }
+
+        .content {
+            /* height: 700px; */
+        }
+
+        .content .container {
+            /* height: 50%; */
+            width: 100%;
+            border: 1px solid red;
+            background: lightblue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content .container .item {
+            width: 25%;
+            /* flex-grow: 1; */
+            height: 350px;
+            border: 1px solid navy;
+        }
+
+        /* aside,
+        article {
+            height: inherit;
+            background: lightblue;
+        }
+        
+        aside {
+            width: 20%;
+        }
+        
+        .main-content {
+            width: 70%;
+            background-color: khaki;
+
+        }
+
+        .main-content fieldset {
+            width: 50%;
+            height: 500px;
+        }
+
+        article {
+            width: 10%;
+        } */
+
+
+        footer {
+            height: 250px;
+            background: #666;
+        }
+        </style>
+        <!-- Media CSS -->
+        <link rel="stylesheet" href="Media.css">
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <div class="bar"><a href="#"><span class="fa fa-bars"></span></a></div>
+>>>>>>> 70dca06 (add)
         <div class="menu"><a href="#">Home</a></div>
         <div class="menu"><a href="#">About us</a></div>
         <div class="menu mcont"><a href="#">Contact Us</a>
@@ -121,23 +302,42 @@
             </ul>
         </div>
         <div class="menu"><a href="#">Log in</a></div>
+<<<<<<< HEAD
 >>>>>>> 0992f78 (main)
+=======
+>>>>>>> 70dca06 (add)
     </header>
     <!-- Header End -->
     <!-- NavBar Start -->
     <nav>
+<<<<<<< HEAD
 
     </nav>
+=======
+        <div class="part part-1"></div>
+        <div class="part part-2"></div>
+    </nav>
+    <section class="Fixed">
+
+    </section>
+>>>>>>> 70dca06 (add)
     <!-- NavBar End -->
     <!-- Slider Start -->
     <section class="banner"></section>
     <!-- Slider End -->
     <!-- main content start -->
     <section class="content">
+<<<<<<< HEAD
         <aside></aside>
 <<<<<<< HEAD
         <section class="main-content"></section>
 =======
+=======
+        <!-- <aside></aside>
+
+        <section class="main-content"></section>
+
+>>>>>>> 70dca06 (add)
         <section class="main-content">
             <fieldset>
                 <legend>Log-in</legend>
@@ -155,12 +355,32 @@
                 </form>
             </fieldset>
         </section>
+<<<<<<< HEAD
 >>>>>>> 0992f78 (main)
         <article></article>
+=======
+        <article></article> -->
+        <div class="container container-1">
+            <div class="item item-1"></div>
+            <div class="item item-1"></div>
+            <div class="item item-1"></div>
+            <div class="item item-1"></div>
+        </div>
+        <div class="container container-2">
+            <div class="item item-1"></div>
+            <div class="item item-1"></div>
+            <div class="item item-1"></div>
+            <div class="item item-1"></div>
+        </div>
+>>>>>>> 70dca06 (add)
     </section>
     <!-- main content end -->
     <!-- Footer Start -->
     <footer></footer>
     <!-- Footer End -->
 </body>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 70dca06 (add)
 </html>
