@@ -1,0 +1,26 @@
+var
+    - can reinitialize
+    - can redefine
+
+let
+    - can reinitialize(change value)
+    - can't redefine
+
+const 
+    - can't reinitialize(change the value)
+    - can't redefine
+------------------------------------------------------------------
+Data type:-
+
+number 
+string 
+int
+float
+boolean 
+
+array
+object
+function
+
+undefine
+Not A Number()
